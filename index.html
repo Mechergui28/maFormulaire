@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Formulaire</title>
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <script>
+
+    </script>
+</head>
+
+<body>
+
+
+
+    <div class="formulaire">
+        <h1>Formulaire</h1>
+
+        <form id="form" method="POST" name="inscription">
+            <p>
+                <label>Nom</label><br />
+                <input type="text" onkeyup="testNom()" name="nom" placeholder="Nom" id="nom"><br>
+                <p id="erreurNom" style="color: red;">
+
+                </p>
+            </p>
+          
+            <p>
+                <label>Prenom</label><br />
+                <input type="text" onkeyup="testPrenom()" name="prenom" placeholder="Prenom" id="prenom"><br>
+                <p id="erreurPrenom" style="color: red;">
+
+                </p>
+
+            </p>
+            <p>
+                Your Date of Birth <br>
+                <select name="month" id="month">
+                    <option value="0">Month</option>
+                    <option value="01">Janvier</option>
+                    <option value="02">Fevrier</option>
+                    <option value="03">Mars</option>
+                    <option value="04">Avril</option>
+                    <option value="05">Mai</option>
+                    <option value="06">Juin</option>
+                    <option value="07">juillet</option>
+                    <option value="08">aout</option>
+                    <option value="09">septembre</option>
+                    <option value="10">octobre</option>
+                    <option value="11">novombre</option>
+                    <option value="12">decembre</option>
+
+                </select>
+
+                <select name="days" id=day>
+                    <option value="0">Days</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                </select>
+
+                <select name="Year" id="year">
+                    <option value="0">Year</option>
+                    <option value="1985">1985</option>
+                    <option value="1988">1988</option>
+                    <option value="1990">1990</option>
+                </select> <br><br>
+                <p id="dateErreur" style="color: red;">
+
+                </p>
+               
+
+            </p>
+            <p>
+                <label>Genre</label><br />
+
+                <input type="radio" id="homme" name="gender" value="homme">
+                <label for="homme">Homme</label>
+                <input type="radio" id="femme" name="gender" value="femme">
+                <label for="femme">Femme</label><br />
+
+            </p>
+            <p>
+                <label>Email</label><br />
+                <input type="email" name="email" onkeyup="testEmail()" placeholder="Email" id="email"><br>
+                <p id="erreurEmail" style="color: red;">
+
+                </p>
+
+            </p>
+            <p>
+                <label>Pseudo</label><br />
+                <input type="text" name="pseudo" placeholder="Pseudo" id="pseudo"><br>
+                <p id="erreurPseudo" style="color: red;">
+
+                </p>
+
+            </p>
+            <p>
+                <label>Mot de passe</label><br />
+                <input type="password" name="mdp" onkeyup="testPwd()" placeholder="Mot de passe" id="mdp"><br>
+                <p id="erreurPwd" style="color: red;">
+
+                </p>
+
+            </p>
+            <p>
+                Confirmation mot de passe<br />
+                <input type="password" name="mdp-confirmation" onkeyup="testPwdC()" placeholder="Confirmation Mot de passe" id="mdp2"><br>
+                <p id="erreurPwdC" style="color: red;">
+
+                </p>
+
+            </p>
+
+            <p>
+                Image<br>
+                <input type="file" name="img" id="img">
+
+            </p>
+            <p>
+                <input type="checkbox" id="verif" name="verif" value="verif">
+                <label for="verif"> J'ai fais la Verification</label><br>
+                <p id="verifErreur" style="color: red;"></p>
+            </p>
+            <p>
+
+
+
+            </p>
+            <p style="color: red;" id="erreur"></p>
+            <button id="myBtn" >Verification</button>   
+            <input type="submit" id="myBtn1"  value="Inscription">
+            <button  id="myBtn2" >Effacer la saisie</button> 
+            <input id="myBtn3"  type="submit" value="Fermer la fenetre" />
+
+
+        </form>
+
+     
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>​
